@@ -1,0 +1,219 @@
+/* Hero Section */
+
+#hero > .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.modal {
+    box-sizing: border-box;
+    box-shadow: 2px 4px rgba(208, 190, 187, 0.27);
+    border-radius: 8px;
+    width: 60%;
+}
+
+.modal > .heading {
+    border-radius: 8px 8px 0px 0px;
+    padding: 16px;
+}
+
+.modal .heading h3 {
+    margin: 0;
+    color: #D9D9D9;
+}
+
+.modal .content {  
+    /* background-color: #D0CBBB; */
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 0px 8px 8px;
+    text-align: center;
+    padding: 250px 0px;
+}
+
+.content > .text {
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.modal > .content h1 {
+    font-size: 80px;
+    margin: 0;
+    font-weight: 800;
+    letter-spacing: 5px;
+}
+
+.content p {
+    margin: 0;
+    font-weight: 500;
+    font-size: x-large;
+    margin: 0;
+}
+
+#hero .btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#hero .btn-container > button {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: large;
+    font-weight: 700;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 20px;
+    margin: 0px 10px;
+}
+
+#hero > .container .link-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+/* MOBILE HERO SECTION */
+#hero .mobile { 
+    display: none;
+    padding: 100px 20px;
+}
+
+#hero .mobile > .content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.mobile > .content h1 { 
+    font-size: 80px;
+    margin: 0; 
+    margin-bottom: 10px;
+}
+
+.mobile p {
+    font-size: large;
+    margin: 0;
+}
+
+.content > .text {
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+#hero .mobile .btn-container { margin-bottom: 20px; }
+
+#hero .mobile .btn-container > button {
+    padding: 8px 10px;
+    font-size: medium;
+}
+
+#hero > .container .link-container { margin-top: 20px; }
+
+/* Media Query */
+
+/* Larger Screens */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .modal .content { padding: 80px 0px; }
+
+    #hero .btn-container { margin-bottom: 40px; }
+    
+    #hero .btn-container > button {
+        font-size: medium;
+        padding: 8px 20px;
+        margin: 0px 10px;
+    }
+
+    #hero > .container .link-container { margin-top: 40px; }
+
+}
+
+/* Tablet Size */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .modal .content { padding: 80px 0px; }
+
+    .modal > .content h1 { font-size: 70px; }
+
+    .content p { font-size: large; }
+
+    #hero .btn-container { margin-bottom: 20px; }
+    
+    #hero .btn-container > button {
+        font-size: medium;
+        padding: 8px 20px;
+        margin: 0px 10px;
+    }
+
+    #hero > .container .link-container { margin-top: 30px; }   
+}
+
+/* Larger Phones  */
+@media (min-width: 481px) and (max-width: 767px) {
+    #hero .modal { display: none; }
+    #hero .mobile { display: block;}
+}
+
+/* Smaller Phones */
+@media (min-width: 320px) and (max-width: 480px) {
+    #hero .modal { display: none; }
+    #hero .mobile { display: block;}
+
+    /* MOBILE HERO SECTION */
+    #hero .mobile { 
+        padding: 50px 20px;
+    }
+
+    #hero .mobile > .content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .mobile > .content h1 { 
+        font-size: 50px; 
+    }
+
+    .mobile p {
+        font-size: medium;
+        margin: 0;
+    }
+
+    .content > .text {
+        margin-top: 25px;
+        margin-bottom: 30px;
+    }
+
+    #hero .mobile .btn-container { 
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 10px; 
+    }
+
+    #hero .mobile .btn-container > button {
+        padding: 8px 5px;
+        font-size: small;
+        margin: 0;
+    }
+
+    #hero .mobile .link-container > img {
+        gap: 0px;
+        width: 18px;
+    } 
+}
+
+/* Smaller Phones */
+@media (max-width: 319px) {
+    #hero .modal { display: none; }
+    #hero .mobile { display: block;}
+
+    #projects > .container .contents {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}

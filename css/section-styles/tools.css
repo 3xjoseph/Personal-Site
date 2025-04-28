@@ -1,0 +1,114 @@
+/* TOOLS and Framework Section */
+#tools { 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    box-sizing: border-box; 
+    text-align: center;
+    /* SPACE BETWEEN SECTION */
+    margin: 50px 0px;
+}
+
+#tools > .tools-framework {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.tools-framework > .tools {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+}
+
+#tools > h2 {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+#tools h3 {
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+/* Tag */
+#tools .tag {
+    width:fit-content;
+    border-radius: 8px;
+    padding: 8px 25px;
+    box-shadow: 2px 4px rgba(208, 190, 187, 0.27);
+}
+
+#tools .tag > h4 {
+    margin: 0;
+}
+
+#tools .tags-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    place-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 0;
+}
+
+
+/* Media Query */
+
+/* Larger Screens */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    #tools > h2 { font-size: 36px; }
+    
+    #tools h3 { font-size: x-large; }
+
+    
+}
+
+/* Tablet Size */
+@media (min-width: 768px) and (max-width: 1024px) {
+    #tools > h2 { font-size: 32px; }    
+    
+    #tools h3 { font-size: 24px; }
+
+    #tools .tag > h4 { font-size: 12px; }
+}
+
+
+/* Larger Phones  */
+@media (min-width: 481px) and (max-width: 767px) {
+    #tools > h2 { font-size: 28px; }    
+    
+    #tools h3 { font-size: 20px; }
+
+    #tools .tag > h4 { font-size: 12px; }
+}
+
+/* Smaller Phones */
+@media (min-width: 320px) and (max-width: 480px) {
+    #tools > h2 { font-size: 20px; }    
+    
+    #tools h3 { font-size: 16px; }
+
+    #tools .tag {
+        padding: 4px 20px;
+        box-shadow: 2px 4px rgba(208, 190, 187, 0.27);
+    }
+
+    #tools .tag > h4 { font-size: 8px; }
+}
+
+/* Smaller Phones */
+@media (max-width: 319px) {
+    #tools > h2 { font-size: 20px; }    
+    
+    #tools h3 { font-size: 16px; }
+
+    #tools .tag {
+        padding: 4px 20px;
+        box-shadow: 2px 4px rgba(208, 190, 187, 0.27);
+    }
+
+    #tools .tag > h4 { font-size: 8px; }
+}
+

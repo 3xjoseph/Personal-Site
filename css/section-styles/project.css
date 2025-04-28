@@ -1,0 +1,157 @@
+/* Project Section */
+#projects {
+    box-sizing: border-box;
+}
+
+#projects .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#projects > .container > h2 {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+#projects > .container .contents {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+#projects .modal {
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 8px;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 8% 92%;
+    background-color: rgba(97, 80, 25, 0.27);
+    align-items: center;
+}
+
+#projects .modal::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url("../images/placeholder.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    backdrop-filter: blur(7px);
+    z-index: 0;
+}
+
+/* Make sure your modal content stays above the overlay */
+#projects .modal > * {
+    position: relative;
+    z-index: 1;
+}
+
+#projects .modal.web-dev::before {
+    background-image: url("/images/acodemia.png");
+}
+
+#projects .modal.uiux-design::before {
+    background-image: url("/images/arc.png");
+}
+
+#projects .modal.game-dev::before {
+    background-image: url("/images/argonassault.png");
+}
+
+#projects .text-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 30% 10%;
+}
+
+#projects .text-container > h1 {
+    font-weight: bolder;
+    font-size: xx-large;
+    margin: 0;
+}
+
+
+/* Media Query */
+
+/* Larger Screens */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    #hero > .container .link-container { margin-top: 40px; }
+
+    /* Projects Section */
+    #projects > .container > h2 { font-size: 36px; }
+
+    #projects .text-container > h1 { font-size: large; }
+
+}
+
+/* Tablet Size */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Projects Section */
+    #projects > .container > h2 {
+        font-size: 32px;
+    }
+
+    #projects .modal { width: 100%; }
+
+    #projects > .container .contents {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }   
+    
+}
+
+/* Larger Phones  */
+@media (min-width: 481px) and (max-width: 767px) {
+    /* Projects Section */
+    #projects > .container > h2 {
+        font-size: 32px;
+    }
+
+    #projects .modal { width: 100%; }
+    
+    #projects > .container .contents {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+/* Smaller Phones */
+@media (min-width: 320px) and (max-width: 480px) {    
+    /* Projects Section */
+    #projects > .container > h2 { font-size: 32px; }
+
+    #projects .text-container > h1 { font-size: large; }
+
+    #projects .modal { width: 100%; }
+    
+    #projects > .container .contents {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+/* Smaller Phones */
+@media (max-width: 319px) {
+    /* Projects Section */
+    #projects > .container > h2 { font-size: 32px; }
+
+    #projects .text-container > h1 { font-size: large; }
+
+    #projects .modal { width: 100%; }
+    
+    #projects > .container .contents {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
