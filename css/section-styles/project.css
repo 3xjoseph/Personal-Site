@@ -37,7 +37,7 @@
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background-image: url("../images/placeholder.png");
+    background-image: url("../../images/placeholder.png");
     background-size: cover;
     background-position: center;
     opacity: 0.3;
@@ -52,15 +52,15 @@
 }
 
 #projects .modal.web-dev::before {
-    background-image: url("../images/acodemia.webp");
+    background-image: url("../../images/acodemia.webp");
 }
 
 #projects .modal.uiux-design::before {
-    background-image: url("../images/arc.webp");
+    background-image: url("../../images/arc.webp");
 }
 
 #projects .modal.game-dev::before {
-    background-image: url("../images/argonassault.webp");
+    background-image: url("../../images/argonassault.webp");
 }
 
 #projects .text-container {
