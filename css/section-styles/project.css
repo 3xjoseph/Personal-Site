@@ -52,15 +52,15 @@
 }
 
 #projects .modal.web-dev::before {
-    background-image: url("/images/acodemia.png");
+    background-image: url("/images/acodemia.webp");
 }
 
 #projects .modal.uiux-design::before {
-    background-image: url("/images/arc.png");
+    background-image: url("/images/arc.webp");
 }
 
 #projects .modal.game-dev::before {
-    background-image: url("/images/argonassault.png");
+    background-image: url("/images/argonassault.webp");
 }
 
 #projects .text-container {
